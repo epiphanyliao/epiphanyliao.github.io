@@ -1,33 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wangyi Liao</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wangyi Liao</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: #222;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .header {
+      display: flex;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    .photo {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: #ddd;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 8px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .links a {
+      margin-right: 16px;
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 42px;
+    }
+
+    h2 {
+      font-size: 24px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .news li {
+      margin-bottom: 8px;
+    }
+
+    .project {
+      margin-bottom: 18px;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    @media (max-width: 650px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<h1>Wangyi Liao</h1>
+    <div class="header">
+      <img class="photo" src="photo.jpg" alt="Profile photo" />
 
-<p>
-Undergraduate student interested in World Models,
-Robot Learning and Embodied AI.
-</p>
+      <div>
+        <h1>Wangyi Liao</h1>
+        <div class="subtitle">
+          Undergraduate Student · Statistics / Artificial Intelligence
+        </div>
 
-<h2>Research Interests</h2>
+        <p>
+          I am an undergraduate student interested in world models,
+          embodied AI, robot learning, and machine learning.
+        </p>
 
-<ul>
-    <li>World Models</li>
-    <li>Embodied AI</li>
-    <li>Robot Learning</li>
-    <li>Machine Learning</li>
-</ul>
+        <div class="links">
+          <a href="https://github.com/epiphanyliao">GitHub</a>
+          <a href="https://www.linkedin.com/in/wangyi-liao-0170373b7">LinkedIn</a>
+          <a href="mailto:liaowangyixm@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
 
-<h2>Links</h2>
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>World Models</li>
+        <li>Embodied AI</li>
+        <li>Robot Learning</li>
+        <li>Machine Learning</li>
+      </ul>
+    </section>
 
-<ul>
-    <li><a href="https://github.com/epiphanyliao">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/wangyi-liao-0170373b7">LinkedIn</a></li>
-</ul>
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><strong>May 2026:</strong> Finishing my first project of designing Shanghai's Food Delivery Scheduling System.</li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Project Title</div>
+        <div>
+          Shanghai Food Delivery Scheduling System
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:liaowangyixm@gmail.com">Email</a>
+      </p>
+    </section>
+
+  </div>
 </body>
 </html>
